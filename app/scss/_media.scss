@@ -1,3 +1,132 @@
+@media screen and (max-width: 320px) and (min-width: 1px){
+    .promo {
+        width: 320px;
+        height: 708px;
+        .container {
+            width: 320px;
+            height: 708px;
+
+            .promo__center{
+                .wheel-wrapper {
+                    width: 235px;
+                    height: 280px;
+                    left: 2px;
+                    top: 0px;
+
+                    .fortune-wheel-inside{
+                        width: 82%;
+                        height: 68%;
+                        position: absolute;
+                        top: 27px;
+                        left: 19px;
+                    }
+
+                    .fortune-wheel-button{
+                        width: 40px;
+                        height: 20px;
+                        font-size: 15px;
+                        padding-top: 0;
+                    }
+
+                }
+                .promo__center-info{
+                    padding-left: 10px;
+                    
+                    width: 320px;
+                    height: 25px;
+                    .center__info-link{
+                        margin-top: 10px;
+                    }
+
+                    .center__info-attempts{
+                        margin-top: 10px;
+                    }
+
+                    .center__info-title{
+                        font-size: 12px;
+                    }
+                    .center__info-attempts{
+                        font-size: 15px;
+                        span{
+                            font-size: 15px;
+                        } 
+                    }
+                }
+            }
+        }
+        .logo__link{
+            width: 60px;
+            height: 60px;
+            .promo__top-logo{
+                width: 60px;
+                height: 40px;
+            }
+        }
+        .promo__top-shadow{
+            height: 27px;
+            padding: 5px 5px 0 5px;
+            .promo__top-title {
+                font-size: 12px;
+                span{
+                    font-size: 12px; 
+                }
+            }
+            .promo__top-btn {
+                width: 112px;
+                height: 27px;
+            }
+        }
+        
+        .center__info-title{
+            font-size: 50px;
+        }
+
+        .wheel-wrapper {
+            width: 255px;
+            height: 285px;
+            left: 10px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px){
+    .promo {
+        width: 1280px;
+        height: 768px;
+        .container {
+            width: 1280px;
+            height: 768px;
+        }
+        .center__info-title{
+            font-size: 50px;
+        }
+    }
+
+    .wheel-wrapper {
+        width: 500px;
+        height: 650px;
+        left: 406px;
+    }
+    .fortune-wheel-inside{
+        top: 66px;
+        left: 66px;
+    }
+    .popup-content.active {
+        left: 367px;
+        top: 242px;
+    }
+    .popup-content-second.active{
+        left: 367px;
+        top: 242px;
+    }
+    .footer__wrapper{
+        width: 1200px;
+    }
+}
+
+
+
 @media screen and (max-width: 1680px) and (min-width: 1440px) {
     .promo{
         width: 1680px;
@@ -73,37 +202,4 @@
     }
 }
 
-@media screen and (max-width: 1280px) and (min-width: 1024px){
-    .promo {
-        width: 1280px;
-        height: 768px;
-        .container {
-            width: 1280px;
-            height: 768px;
-        }
-        .center__info-title{
-            font-size: 50px;
-        }
-    }
-    .wheel-wrapper {
-        width: 500px;
-        height: 650px;
-        left: 406px;
-    }
-    .fortune-wheel-inside{
-        top: 66px;
-        left: 66px;
-    }
-    .popup-content.active {
-        left: 367px;
-        top: 242px;
-    }
-    .popup-content-second.active{
-        left: 367px;
-        top: 242px;
-    }
-    .footer__wrapper{
-        width: 1200px;
-    }
-}
 

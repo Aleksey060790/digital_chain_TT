@@ -13,23 +13,23 @@ $(function () {
     };
 
     let spinFirstTime = function () {
-        $(".fortune-wheel-inside").css("transform", "rotate(70deg)");
+        $(".fortune-wheel-inside").addClass("run-animation-one").css("transform", "rotate(70deg)");
     }
 
     let spinSecondTime = function () {
-        $(".fortune-wheel-inside").css("transform", "rotate(375deg)");
+        $(".fortune-wheel-inside").removeClass("run-animation-one").addClass("run-animation-two").css("transform", "rotate(375deg)");
     }
 
     $("#wheel-btn").click(function () {
         spinFirstTime();
-        setTimeout(showFirstModal, 2000);
+        setTimeout(showFirstModal, 4000);
 
     });
 
     $("#spinSecedondTime").click(function () {
         hideFirstModal();
         setTimeout(spinSecondTime, 1500);
-        setTimeout(showSecondModal, 3500);
+        setTimeout(showSecondModal, 6000);
     });
 
 });
