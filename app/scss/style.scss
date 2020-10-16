@@ -1,0 +1,241 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.promo{
+    position: relative; 
+    width: 1920px;
+    height: 1080px;
+    background: url(../images/bg/main_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    .container{
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        background: url(../images/bg/cowboy.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+    .promo__top-shadow{
+        padding: 36px 60px 0 60px;
+        height: 248px;
+        background: linear-gradient(180deg, #000000 13.02%, rgba(0, 0, 0, 0) 100%);
+        display: flex;
+        justify-content: space-between;
+
+        .promo__top-btn{
+            font-family: 'Pari-Match';
+            font-size: 17px;
+            width: 155px;
+            height: 38px;
+            background: rgba(0, 0, 0, 0);
+            border: 2px solid #F8FF13;
+            color: #F8FF13;
+            transform: skewX(-20deg); 
+        }
+        .promo__top-title{
+            font-family: 'Pari-Match';
+            color: #fff;
+            font-size: 42px;
+            span{
+                color: #F8FF13;
+                font-size: 42px;
+            }
+        }
+    }
+    .promo__center{
+        width: 630px;
+        height: 242px;
+        .promo__center-info{
+            font-family: 'Pari-Match';
+            padding-left: 108px;
+            display: inline-block;
+            width: 630px;
+            height: 242px;
+            .center__info-title{
+                text-align: left;
+                color: #F8FF13;
+                font-size: 72px;
+                font-weight: 700;
+            }
+            .center__info-link{
+                margin-top: 60px;
+                a {
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+            .center__info-attempts{
+                margin-top: 35px;
+                color: #fff;
+                font-size: 44px;
+                text-transform: uppercase;
+                span {
+                    color: #F8FF13; 
+                    font-size: 44px;
+                }
+            }
+        }
+    }
+    .wheel-wrapper {
+        width: 794px;
+        height: 903px;
+        position: relative;
+        left: 530px;
+        top: -480px;
+    }
+    .fortune-wheel {
+
+        &-outside {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+        }
+        &-inside {
+            width: 79%;
+            height: 71%;
+            position: absolute;
+            top: 77px;
+            left: 80px;
+            z-index: 1;
+            animation-name: spin;
+            animation-duration: 2000ms;
+            animation-iteration-count: 2;
+            animation-timing-function: linear; 
+        }
+        @keyframes spin {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(360deg);
+            }
+        }
+        &-button {
+            font-family: 'Pari-Match';
+            width: 198px;
+            height: 198px;
+            background-color: #F8FF13;
+            z-index: 3;
+            left: 49.8%;
+            top: 43.4%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            border-radius: 100% 100%;
+            text-align: center;
+            font-size: 50px;
+            padding-top: 65px;
+        }
+    }
+    .promo__footer{
+        position: absolute;
+        bottom: 0;
+        height: 348px;
+        width: 100%;
+        background: url(../images/bg/smoke_down.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        z-index: 4;
+        .footer__wrapper{
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            height: 78px;
+            display: flex;
+            justify-content: space-between;
+            .payments__wrapper{
+                display: flex;
+                justify-content: space-between;
+                width: 300px;
+                margin-left: 24px;
+            }
+            .apps__wrapper{
+                display: flex;
+                justify-content: space-between;
+                width: 265px;
+            }
+            .trust__wrapper{
+                padding-top: 25px;
+            }
+            .social__wrapper{
+                display: flex;
+                justify-content: space-between;
+                width: 260px;
+                margin-right: 60px;
+            }
+        }
+    }
+    .popup-overlay {
+        visibility:hidden;
+    }
+    .popup-content, .popup-content-next {
+        visibility:hidden;
+    }
+    .popup-overlay.active{
+        visibility:visible;
+    }     
+    .popup-content.active, .popup-content-second.active {
+        visibility:visible;
+        text-align: center;
+        width: 682px;
+        height: 470px;
+        background-color: #000;
+        position: absolute;
+        top: 300px;
+        left: 580px;
+        z-index: 5;
+        .active-close-btn{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        h2 {
+            color: #fff;
+            font-family: 'Pari-Match';
+            font-size: 44px;
+        }
+        .content-active-winprice{
+            color: #F8FF13;
+            font-family: 'Pari-Match';
+            font-size: 120px;
+            margin: 0;
+        }
+
+        .content-active-attempts{
+            font-family: 'Circle';
+            color: #fff;
+            font-size: 24px;
+            margin: 0;
+
+        }
+        .content-active-btn{
+            margin-top: 20px;
+            font-family: 'Pari-Match';
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 30px;
+            width: 361px;
+            height: 67px;
+            background: #F8FF13;
+            color: #000;
+            transform: skewX(-20deg); 
+        }
+        .active-content-wrapper{
+            width: 100%;
+            height: 210px;
+            background: url(../images/bg/smoke_down.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            padding-top: 30px;
+        }
+    } 
+}
+
+@import "media";

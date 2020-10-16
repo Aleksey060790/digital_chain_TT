@@ -1,0 +1,109 @@
+@media screen and (max-width: 1680px) and (min-width: 1440px) {
+    .promo{
+        width: 1680px;
+        height: 1050px;
+        .container{
+            width: 1680px;
+        height: 1050px;
+        }
+        .center__info-title{
+            font-size: 70px;
+        }
+        .promo__top-shadow{
+            height: 150px;
+            .promo__top-title{
+                font-size: 35px;
+                span{
+                    font-size: 35px;
+                }
+            }
+        }
+        .wheel-wrapper {
+            width: 795px;
+            height: 903px;
+            left: 425px;
+            top: -411px;
+        }
+        .fortune-wheel-inside {
+            width: 80%;
+            height: 71%;
+            top: 78px;
+            left: 77px;
+        }
+        .fortune-wheel-button {
+            width: 133px;
+            height: 133px;
+            font-size: 46px;
+            padding-top: 36px;
+        }
+        .popup-content.active{
+            left: 474px;
+        }
+        .popup-content-second.active{
+            left: 474px;
+        }
+    }
+}
+@media screen and (max-width: 1440px) and (min-width: 1281px){
+    .promo {
+        width: 1440px;
+        height: 900px;
+        .container {
+            width: 1440px;
+            height: 900px;
+        }
+        .wheel-wrapper {
+            width: 673px;
+            height: 752px;
+            left: 375px;
+            top: -421px;
+        }
+        .fortune-wheel-inside{
+            top: 66px;
+            left: 66px;
+        }
+        .popup-content.active {
+            left: 367px;
+            top: 242px;
+        }
+        .popup-content-second.active{
+            left: 367px;
+            top: 242px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px){
+    .promo {
+        width: 1280px;
+        height: 768px;
+        .container {
+            width: 1280px;
+            height: 768px;
+        }
+        .center__info-title{
+            font-size: 50px;
+        }
+    }
+    .wheel-wrapper {
+        width: 500px;
+        height: 650px;
+        left: 406px;
+    }
+    .fortune-wheel-inside{
+        top: 66px;
+        left: 66px;
+    }
+    .popup-content.active {
+        left: 367px;
+        top: 242px;
+    }
+    .popup-content-second.active{
+        left: 367px;
+        top: 242px;
+    }
+    .footer__wrapper{
+        width: 1200px;
+    }
+}
+
